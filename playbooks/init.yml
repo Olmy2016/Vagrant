@@ -1,0 +1,9 @@
+---
+- name: Start
+  become: true
+  roles:
+    - geerlingguy.docker
+    - deekayen.awscli2
+    - diodonfrost.terraform
+
+
