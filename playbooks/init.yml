@@ -1,8 +1,11 @@
 ---
-- name: Start
+- name:
   hosts: all
   become: true
   roles:
+    - infrastructure
+    - sonarqube
+    - packages
     - geerlingguy.docker
     - deekayen.awscli2
     - diodonfrost.terraform
