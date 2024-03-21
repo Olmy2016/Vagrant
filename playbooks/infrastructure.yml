@@ -1,0 +1,7 @@
+---
+- name: Infrastructure Roles 
+  hosts: all
+  become: true
+  roles:
+  - infrastructure
+  - sonarqube
